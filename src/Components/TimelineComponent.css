@@ -1,0 +1,31 @@
+.MuiTimelineItem-root::before {
+    display: none;
+}
+
+.MuiTimelineItem-root {
+    display: grid;
+    padding-left: 15px;
+    min-height: 50px !important;
+}
+.MuiTimelineDot-defaultGrey {
+    border-color: #ffc107 !important;
+    background-color: white !important;
+}
+
+.icon .MuiTimelineConnector-root {
+    margin-left: -20px !important;
+}
+
+.icon {
+    margin-left: -10px !important;
+}
+
+.TimelineConnector {
+    padding-left: -10px !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .MuiTimeline-root {
+        align-items: center !important;
+    }
+}

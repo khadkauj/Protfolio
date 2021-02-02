@@ -1,0 +1,11 @@
+.Buttons {
+    text-align: left;
+    padding: 1px 6px 1px 19px;
+    color: #000 !important;
+    background: var(--main-color) !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+    -moz-border-radius: 50px !important;
+}

@@ -1,0 +1,18 @@
+:root {
+    --main-color: #ffc500;
+}
+
+.App {
+    margin-top: 50px;
+    /* background-color: var(--main-color); */
+    background-image: url("undraw.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 991px) {
+    .App {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,19 @@
+.home__icon {
+    color: tomato;
+    background-color: var(--main-color);
+    border: 0;
+
+    margin-left: -15px;
+}
+
+.a__header {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+._Navlink {
+    padding-left: 10px;
+    margin: 10px;
+    flex: 1;
+}
