@@ -1,0 +1,37 @@
+.article {
+    font-family: cursive;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: transparent !important;
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+}
+.article_span {
+    display: flex;
+}
+
+.article__title {
+    text-transform: uppercase;
+    font-size: xx-large;
+    padding: 10px;
+    text-align: left;
+}
+
+.article__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 20%;
+    object-fit: contain;
+}
+
+.article__text {
+    white-space: pre-line;
+}
+
+.fb {
+    height: 50vh;
+    width: 50vw;
+}

@@ -17,23 +17,16 @@ const AboutMePage = () => {
                 <Grid container>
                     <Grid item xs={12}>
                         <p className="aboutme__text">
-                            Started earnest brother believe an exposed so. Me he believing daughters if forfeited at
-                            furniture. Age again and stuff downs spoke. Late hour new nay able fat each sell. Nor
-                            themselves age introduced frequently use unsatiable devonshire get. They why quit gay cold
-                            rose deal park. One same they four did ask busy. Reserved opinions fat him nay position.{" "}
-                            <br /> <br /> Breakfast as zealously incommode do agreeable furniture. One too nay led fanny
-                            allow plate. Quick six blind smart out burst. Perfectly on furniture dejection determine my
-                            depending an to. Add short water court fat. Her bachelor honoured perceive securing but
-                            desirous ham required. Questions deficient acuteness to engrossed as. Entirely led ten
-                            humoured greatest and yourself. Besides ye country on observe. She continue appetite
-                            endeavor she judgment interest the met. For she surrounded motionless fat resolution may.
+                            My name is Ujjwal Khadka (you can call me Uj) . I am currently in my first year with a major
+                            in computer science here at Jacobs University Bremen. <br /> In my spare time I read
+                            philosophical poems and essays. I also like dogs and my favorite football club is FCB.
                         </p>
                     </Grid>
                 </Grid>
             </div>
 
             {/* MY SERVICES */}
-            <div className="service__div">
+            {/* <div className="service__div">
                 <h2 className="my__services">My Services</h2>
                 <hr className="hr" />
                 <Grid container spacing={5}>
@@ -47,18 +40,22 @@ const AboutMePage = () => {
                         </Grid>
                     ))}
                 </Grid>
-            </div>
+            </div> */}
 
             {/* MY SKILLS */}
-            <Paper className="skills__div">
+            <Paper className="skills__div" elevation={5}>
+                <h2 className="my__services">Skills</h2>
+                <hr className="hr" />
                 <Grid container spacing={5} className="skills_grid">
                     {details.skills.map((skill) => (
                         <Grid item xs={12} sm={6} md={3} lg={3}>
-                            <strong>{skill.name}</strong>
+                            <h4 className="skill__name">
+                                <code>{skill.name}</code>
+                            </h4>
                             {skill.technologies.map((technology) => (
                                 <div className="technology__">
                                     <TimelineDot className="technology__dot" />
-                                    <code>{technology}</code>
+                                    <p>{technology}</p>
                                 </div>
                             ))}
                         </Grid>

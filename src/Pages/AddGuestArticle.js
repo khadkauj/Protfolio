@@ -3,20 +3,25 @@ import { database } from "../firebase";
 import firebase from "firebase";
 
 import "./AddGuestArticle.css";
+import { useHistory } from "react-router-dom";
 const AddGuestArticle = () => {
+    const history = useHistory();
     const [name, setname] = useState("");
     const [email, setemail] = useState("");
     const [title, settitle] = useState("");
     const [textArticle, settextArticle] = useState("");
-    const sendToFirebase = (e) => {
+    const sendToFirebase = async (e) => {
         e.preventDefault();
         console.log(name, email);
-        database.collection("Articles").add({
+        await database.collection("Articles").add({
+            name: name,
+            email: email,
             articleTitle: title,
             articleText: textArticle,
             date: new Date(),
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         });
+        history.push("/Blogs");
     };
     return (
         <div>

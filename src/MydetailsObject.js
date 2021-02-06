@@ -1,22 +1,39 @@
 import WorkIcon from "@material-ui/icons/Work";
+import { Link } from "react-router-dom";
 const details = {
     name: "Ujjwal Khadka",
     title: "Work Student",
     birthday: "06 December 1987",
-    job: "Freelancer",
-    email: "henry@domain.com",
-    workExperience: {
-        jobtitle: "Cheif Engineer",
-        jobexperienceyear: "7+Years",
-        jobtext:
-            "Built websites using WordPress, wrote coding using HTML, CSS, and Javascript \n Prepared website proposals to present to clients, and Provided technical support to clients.\nDesigned new features for existing websites. \nManaged a user guide to help clients understand site features to increase visitor satisfaction.",
-    },
-    education: {
-        instuitionName: "Jacobs Universitty",
-        instuitiondate: "2004 - 2009",
-        instuitiontext:
-            "Expenses as material breeding insisted building to in. Continual so distrusts\n\n pronounce by unwilling listening. Thing do taste on we mano",
-    },
+    job: "Looking for part-time offers*",
+    email: "u.khadka@jacobs-university.de",
+    educationName: "Jacobs University Bremen",
+    workExperience: [
+        {
+            jobtitle: "WordPress Intern",
+            jobexperienceyear: "Jan 2020 - March 2020",
+            jobtext: [
+                "Built websites using WordPress, wrote coding using HTML, CSS, and Javascript.",
+                "Prepared website proposals to present to clients, and Provided technical support to clients.",
+                "Designed new features for existing websites. ",
+                "Managed a user guide to help clients understand site features to increase visitor satisfaction.",
+            ],
+        },
+        {
+            jobtitle: "Technical Marketer/Bench Sales",
+            jobexperienceyear: "June 2019 - Dec 2019",
+            jobtext: [
+                "Worked with hiring managers to define job requirements, job postings, and develop new sourcing strategies. ",
+                "Collaborated with third-party recruiting companies to source candidates from diverse pools of job seekers. ",
+            ],
+        },
+    ],
+    education: [
+        {
+            instuitionName: "Jacobs University",
+            instuitiondate: "2020 - 2023",
+            instuitiontext: " Computer Science, Class of 2023",
+        },
+    ],
     services: [
         {
             icon: <WorkIcon />,
@@ -42,7 +59,7 @@ const details = {
     skills: [
         {
             name: "Frontend Skills",
-            technologies: ["HTML5", "CSS", "ReactJS", "Boottstrap"],
+            technologies: ["HTML5", "CSS3", "ReactJS", "Bootstrap"],
         },
         {
             name: "Backend SKills",
@@ -56,39 +73,46 @@ const details = {
     projects: [
         {
             tag: "Fullstack",
-            title: "Full sed do ei ",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporborum.",
-            demoLink: "htpps//hefsk.com/vhfj",
+            title: "Fullstack MERN App",
+            description: "Shows where you will be roaming next year by fetching random images from API",
+            demoLink: "https://khadkauj.github.io/FullstackApp/",
             image: "https://source.unsplash.com/collection/8806655/800*600",
         },
         {
-            tag: "Frontend",
-            title: "Front sed do eiu",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporborum.",
-            demoLink: "htpps//hefsk.com/vhfj",
-            image: "https://source.unsplash.com/collection/8806655/800*600",
-        },
-
-        {
-            tag: "Frontend",
-            title: "Front sed do eiusm",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporborum.",
-            demoLink: "htpps//hefsk.com/vhfj",
+            tag: "Fullstack",
+            title: "Realtime-Chatbox",
+            description: "A real-time Messenger like app to chat with your friend..",
+            demoLink: "https://khadkauj.github.io/chatbox/",
             image: "https://source.unsplash.com/collection/8806655/800*600",
         },
         {
-            tag: "Backend",
-            title: "Back sed do eiusmo ",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporborum.",
-            demoLink: "htpps//hefsk.com/vhfj",
+            tag: "Fullstack",
+            title: "LinkedIn Clone",
+            description: "LinkedIn clone that lets you login and post your ideas.",
+            demoLink: "https://khadkauj.github.io/my-news/",
             image: "https://source.unsplash.com/collection/8806655/800*600",
         },
 
         {
+            tag: "Frontend",
+            title: "Lovebot-Tinder-Clone",
+            description: "A Tinder-like-Clone where you can share your photo and swap people",
+            demoLink: "https://khadkauj.github.io/lovebot/",
+            image: "https://source.unsplash.com/collection/8806655/800*600",
+        },
+        {
+            tag: "Frontend",
+            title: "RoboShop",
+            description: "A roboshop, which shows you a random robots.",
+            demoLink: " https://khadkauj.github.io/roboApp/",
+            image: "https://source.unsplash.com/collection/8806655/800*600",
+        },
+
+        {
             tag: "Backend",
-            title: "Back sed do eiusmo ",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporborum.",
-            demoLink: "htpps//hefsk.com/vhfj",
+            title: "NodeJS Server Api",
+            description: "A  hotel dish API made using NodeJS, Express, and MongoDB",
+            demoLink: "https://github.com/khadkauj/Node-MongoDB-HotelDishMenu",
             image: "https://source.unsplash.com/collection/8806655/800*600",
         },
     ],

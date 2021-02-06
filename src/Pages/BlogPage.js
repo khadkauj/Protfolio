@@ -7,11 +7,6 @@ import { Link, NavLink, useHistory } from "react-router-dom";
 import { database } from "../firebase";
 const BlogPage = () => {
     const [Article, setArticle] = useState([]);
-    const history = useHistory();
-    const RenderArticle = (no) => {
-        console.log("e is :", no);
-        // history.push(/RenderArticle/);
-    };
 
     useEffect(() => {
         database.collection("Articles").onSnapshot((snapshot) =>

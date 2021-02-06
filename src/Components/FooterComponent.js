@@ -6,12 +6,8 @@ import "./FooterComponent.css";
 const FooterComponent = () => {
     return (
         <div className="footer">
-            <div className="footer__left">
-                <Typography className="typo">Your Name</Typography>
-            </div>
-            <div className="footer__right">
-                <p> &copy; Ujjwal Khadka, 2021, Jacobs University</p>
-            </div>
+            <p className="footer__left">UJJWAL KHADKA</p>
+            <p className="footer_end">Infinity, The world is our common property.</p>
         </div>
     );
 };

@@ -15,8 +15,18 @@
 
 .hr {
     border-width: 10px;
-    width: 6rem;
+    width: 5rem;
     margin-top: -20px;
     background-color: #ffb100 !important;
     opacity: 0.3;
+}
+
+.p10 {
+    padding: 10px;
+}
+.p5 {
+    padding: 5px;
+}
+.p10l {
+    padding-left: 10px;
 }

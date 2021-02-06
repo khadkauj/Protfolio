@@ -12,47 +12,100 @@ import ContactPage from "./Pages/ContactPage";
 import ProtfolioPage from "./Pages/ProtfolioPage";
 import BlogPage from "./Pages/BlogPage";
 import AddGuestArticle from "./Pages/AddGuestArticle";
+import ArticleRenderPage from "./Pages/ArticleRenderPage";
 function App() {
     return (
         <div className="App">
-            <Container>
-                <Grid container spacing={5}>
-                    <Grid item xs={12} sm={12} md={3} lg={3}>
-                        <ProfileSidebarComponent />
-                    </Grid>
-                    <Grid item xs sm={12} md={9} lg={9}>
-                        <Router>
-                            <HeaderComponent />
-                            <Switch>
-                                <Route path="/Home">
+            <Router>
+                <Container>
+                    <Grid container spacing={5}>
+                        <Switch>
+                            <Route path="/Home">
+                                <Grid item xs={12} sm={12} md={4} lg={4}>
+                                    <ProfileSidebarComponent />
+                                </Grid>
+                                <Grid item xs sm={12} md={8} lg={8}>
+                                    <HeaderComponent />
                                     <AboutMePage />
-                                </Route>
-                                <Route path="/Resume">
+                                    <FooterComponent />
+                                </Grid>
+                            </Route>
+                            <Route path="/Resume">
+                                <Grid item xs={12} sm={12} md={4} lg={4}>
+                                    <ProfileSidebarComponent />
+                                </Grid>
+                                <Grid item xs sm={12} md={8} lg={8}>
+                                    <HeaderComponent />
                                     <ResumePage />
-                                </Route>
-                                <Route path="/Contact">
+                                    <FooterComponent />
+                                </Grid>
+                            </Route>
+                            <Route path="/Contact">
+                                <Grid item xs={12} sm={12} md={4} lg={4}>
+                                    <ProfileSidebarComponent />
+                                </Grid>
+                                <Grid item xs sm={12} md={8} lg={8}>
+                                    <HeaderComponent />
                                     <ContactPage />
-                                </Route>
-                                <Route path="/Protfolio">
+                                    <FooterComponent />
+                                </Grid>
+                            </Route>
+                            <Route path="/Protfolio">
+                                <Grid item xs={12} sm={12} md={4} lg={4}>
+                                    <ProfileSidebarComponent />
+                                </Grid>
+                                <Grid item xs sm={12} md={8} lg={8}>
+                                    <HeaderComponent />
                                     <ProtfolioPage />
-                                </Route>
-                                <Route path="/Blogs">
+                                    <FooterComponent />
+                                </Grid>
+                            </Route>
+                            <Route exact path="/Blogs">
+                                <Grid item xs={12} sm={12} md={4} lg={4}>
+                                    <ProfileSidebarComponent />
+                                </Grid>
+                                <Grid item xs sm={12} md={8} lg={8}>
+                                    <HeaderComponent />
                                     <BlogPage />
-                                </Route>
-                                <Route path="/GuestArticle">
+                                    <FooterComponent />
+                                </Grid>
+                            </Route>
+                            <Route path="/GuestArticle">
+                                <Grid item xs={12} sm={12} md={4} lg={4}>
+                                    <ProfileSidebarComponent />
+                                </Grid>
+                                <Grid item xs sm={12} md={8} lg={8}>
+                                    <HeaderComponent />
                                     <AddGuestArticle />
-                                </Route>
-                                <Route exact path="/">
+                                    <FooterComponent />
+                                </Grid>
+                            </Route>
+                            <Route exact path="/Blogs/Guests/:id">
+                                <ArticleRenderPage />
+                            </Route>
+                            <Route exact path="/">
+                                <Grid item xs={12} sm={12} md={4} lg={4}>
+                                    <ProfileSidebarComponent />
+                                </Grid>
+                                <Grid item xs sm={12} md={8} lg={8}>
+                                    <HeaderComponent />
                                     <AboutMePage />
-                                </Route>
-                            </Switch>
-                            <FooterComponent />
-                        </Router>
+                                    <FooterComponent />
+                                </Grid>
+                            </Route>
+                        </Switch>
                     </Grid>
-                </Grid>
-            </Container>
+                </Container>
+            </Router>
         </div>
     );
 }
 
 export default App;
+
+//    <Grid container spacing={5}>
+//                         <Grid item xs={12} sm={12} md={4} lg={4}>
+//                             <ProfileSidebarComponent />
+//                         </Grid>
+//                         <Grid item xs sm={12} md={9} lg={9}>
+//                             <HeaderComponent />

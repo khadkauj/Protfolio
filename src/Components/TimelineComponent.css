@@ -3,9 +3,9 @@
 }
 
 .MuiTimelineItem-root {
-    display: grid;
-    padding-left: 15px;
-    min-height: 50px !important;
+    display: block;
+    min-height: 60px !important;
+    margin-bottom: -30px !important;
 }
 .MuiTimelineDot-defaultGrey {
     border-color: #ffc107 !important;
@@ -13,6 +13,15 @@
     color: black;
 }
 
+.MuiTimelineContent-root {
+    align-self: top;
+    align-items: center;
+    justify-self: center !important;
+    margin-top: -7px;
+}
+
+.MuiTimelineSeparator-root {
+}
 .icon .MuiTimelineConnector-root {
     margin-left: -20px !important;
 }
@@ -25,12 +34,17 @@
     padding-left: -10px !important;
 }
 
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
     .MuiTimeline-root {
-        align-items: center !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
-}
+} */
 
+.timeline {
+}
 .timelinecomponent > p {
     display: block;
     margin-block-start: 0em;
@@ -38,4 +52,28 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     white-space: pre-line;
+}
+
+.siderbar_P {
+    font-weight: 600;
+    align-items: center;
+    margin-top: -12px !important;
+}
+.siderbar_P2 {
+    font-weight: 400;
+    font-size: medium;
+    align-items: center;
+    margin-left: 5px;
+    opacity: 0.8;
+    margin-top: -12px !important;
+}
+.div {
+    display: flex;
+}
+
+.padding {
+    padding: 5px;
+}
+.jobtext {
+    padding-bottom: 5px;
 }

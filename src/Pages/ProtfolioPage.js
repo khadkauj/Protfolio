@@ -41,24 +41,27 @@ const ProtfolioPage = () => {
                 {details?.projects?.map((project, i) => (
                     <>
                         {tabValue === project?.tag || tabValue === "All" ? (
-                            <Grid item xs={12} sm={6} md={6} lg={4}>
-                                <Card className="card">
-                                    <CardActionArea>
-                                        <figure className="card_figure">
-                                            <img src={project.image + i} alt="Trulli" className="card__img" />
-                                            <figcaption className="figure_caption">
-                                                <span className="figure_title">{project.title}</span>
-                                                <br />
-                                                <span className="figure_description">{project.description}</span>
-                                            </figcaption>
-                                        </figure>
-                                    </CardActionArea>
-                                    <CardActions classname="card__actions">
+                            <Grid key={i} item xs={12} sm={6} md={6} lg={4}>
+                                <a href={project.demoLink} className="link">
+                                    <Card className="card">
+                                        <CardActionArea>
+                                            <figure className="card_figure">
+                                                <img src={project.image + i} alt="Trulli" className="card__img" />
+                                                <figcaption className="figure_caption">
+                                                    <span className="figure_title">{project.title}</span>
+                                                    <br />
+                                                    <span className="figure_description">{project.description}</span>
+                                                </figcaption>
+                                            </figure>
+                                        </CardActionArea>
+                                        {/* THE CARD ACTION BELOW CAN BE IMPLEMENTED TO SHOW MORE OPTIONS AVAIBALE WITH CARD */}
+                                        {/* <CardActions classname="card__actions">
                                         <Button classname="card__actions" size="small" color="primary">
                                             Share
                                         </Button>
-                                    </CardActions>
-                                </Card>
+                                    </CardActions> */}
+                                    </Card>
+                                </a>
                             </Grid>
                         ) : null}
                     </>
