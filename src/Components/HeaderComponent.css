@@ -1,8 +1,21 @@
-.home__icon {
-    color: tomato;
-    background-color: var(--main-color);
-    border: 0;
+.nav__container {
+    margin-bottom: 30px !important;
+    font-size: 100% !important;
+}
 
+.nav__container__navbar {
+    border-radius: 15px !important;
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07) !important;
+    background-color: white !important;
+}
+
+.navlink:hover {
+    color: var(--main-color) !important;
+}
+
+.home__icon {
+    color: black;
+    background-color: var(--main-color);
     margin-left: -15px;
 }
 

@@ -1,0 +1,66 @@
+.AboutMe {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent !important;
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+}
+
+.service_grid {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+}
+
+.service__icon {
+    padding-bottom: 30px;
+    align-self: left;
+}
+.service_main_text {
+    font-size: 14px;
+    font-weight: 500;
+}
+.service__text {
+    color: #989898;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.my__services {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    font-weight: bolder;
+}
+
+.section__div {
+    padding: 20px;
+}
+.service__div {
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.skills_grid {
+    justify-content: space-around;
+}
+
+.technology__ {
+    display: flex;
+    align-items: center;
+}
+
+.technology__dot {
+    padding: 5px;
+    margin: 8px;
+}
+
+.skills__div {
+    background-color: white;
+    margin: 30px 0px;
+    width: 100% !important;
+}

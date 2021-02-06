@@ -1,0 +1,31 @@
+.contact__div {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent !important;
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+}
+
+.contact__information {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    color: lightslategray;
+}
+
+.tyopgraphy__contactform {
+    font-weight: 700 !important;
+    color: black;
+}
+
+.information {
+    margin-bottom: 25px !important;
+}
+
+.contact__information > p > span {
+    color: black;
+    font-size: medium;
+    line-height: 2px;
+    font-weight: 400;
+}

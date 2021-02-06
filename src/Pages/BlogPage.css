@@ -1,0 +1,64 @@
+.card {
+    transition: ease-in;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.__blog {
+    padding: 20px;
+    background: transparent !important;
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.Blogs__grid {
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.blog_grid_figure {
+    width: auto;
+    height: 250px;
+    overflow: hidden;
+}
+
+.blog_grid_figure:hover {
+}
+
+.figure__caption {
+    padding: 0 10px 0 10px;
+}
+
+.span__1 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.span__2 {
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+.guest__article {
+    margin-left: auto !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    font-weight: bold !important;
+}
+
+.grid__header {
+    display: flex;
+    margin-bottom: 20px !important;
+}
+
+.navlink {
+    text-decoration: none !important;
+    color: aliceblue;
+}
+
+.navlink:hover {
+    color: inherit !important;
+}

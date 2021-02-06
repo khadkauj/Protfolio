@@ -4,17 +4,18 @@ import { Button } from "@material-ui/core";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import TimelineComponent from "./TimelineComponent";
 import ButtonComponent from "./ButtonComponent";
+import details from "../MydetailsObject";
 
 import "./ProfileSidebarComponent.css";
 
 const ProfileSidebarComponent = () => {
     return (
-        <div clasname="profile">
+        <div className="profile">
             <div>
                 <Typography variant="h6" gutterBottom>
-                    Ujjwal Khadka
+                    {details.name}
                 </Typography>
-                <span>Work Student</span>
+                <span>{details.title}</span>
             </div>
 
             <figure className="figure">
@@ -25,7 +26,10 @@ const ProfileSidebarComponent = () => {
                 />
             </figure>
             <div>
-                <TimelineComponent />
+                <TimelineComponent name={details.name} />
+                <TimelineComponent job={details.job} />
+                <TimelineComponent title={details.title} />
+                <TimelineComponent email={details.email} />
             </div>
             <div className="__Button">
                 <ButtonComponent text={"Download CV"} icon={<GetAppIcon />} />

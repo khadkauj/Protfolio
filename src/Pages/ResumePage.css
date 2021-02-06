@@ -1,0 +1,21 @@
+.resume {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 20px;
+}
+
+.span {
+    background-color: #ffb100 !important;
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.4;
+    left: 0;
+}
+
+.h2 {
+    font-size: 25px;
+    font-weight: 600;
+}

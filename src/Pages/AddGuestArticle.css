@@ -1,0 +1,28 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 20vw;
+}
+
+.form_textarea {
+    margin: 10px;
+    width: 20vw;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    outline: none;
+}
+
+.text {
+    width: 50vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 10px;
+}
+
+.form > input {
+    outline: none;
+}

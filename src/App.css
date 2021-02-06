@@ -4,15 +4,19 @@
 
 .App {
     margin-top: 50px;
-    /* background-color: var(--main-color); */
-    background-image: url("undraw.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url("./pic.png");
 }
 
 @media only screen and (max-width: 991px) {
     .App {
         margin-top: 10px;
     }
+}
+
+.hr {
+    border-width: 10px;
+    width: 6rem;
+    margin-top: -20px;
+    background-color: #ffb100 !important;
+    opacity: 0.3;
 }
