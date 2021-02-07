@@ -13,61 +13,62 @@ import SchoolIcon from "@material-ui/icons/School";
 import "./ResumePage.css";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 const ResumePage = () => {
-    return (
-        <div className="resume">
-            <div>
-                <h2 className="h2">Resume</h2>
-                <hr className="hr" />
-            </div>
-            <Grid container spacing={1}>
-                <Grid item xs={12} sm={12} md={6} lg={6}>
-                    <Timeline>
-                        <TimelineItem>
-                            <TimelineSeparator>
-                                <TimelineDot className="timelinedot">
-                                    <WorkIcon fontSize={"large"} />
-                                </TimelineDot>
-                                <TimelineConnector className="timeline__connector" />
-                            </TimelineSeparator>
-                            <TimelineContent className="timelinecomponent">
-                                <strong> Working Experience</strong>
-                            </TimelineContent>
-                        </TimelineItem>
-                    </Timeline>
-                    {details.workExperience.map((work) => (
-                        <TimelineComponent
-                            className="timeline__list"
-                            jobtitle={work.jobtitle}
-                            jobexperienceyear={work.jobexperienceyear}
-                            jobtext={work.jobtext}
-                        />
-                    ))}
-                </Grid>
-                <Grid item xs>
-                    <Timeline>
-                        <TimelineItem>
-                            <TimelineSeparator>
-                                <TimelineDot className="timelinedot">
-                                    <SchoolIcon fontSize="large" />
-                                </TimelineDot>
-                                <TimelineConnector className="timeline__connector" />
-                            </TimelineSeparator>
-                            <TimelineContent className="timelinecomponent">
-                                <strong> Education</strong>
-                            </TimelineContent>
-                        </TimelineItem>
-                    </Timeline>
-                    {details.education.map((education) => (
-                        <TimelineComponent
-                            instuitionName={education.instuitionName}
-                            instuitiondate={education.instuitiondate}
-                            instuitiontext={education.instuitiontext}
-                        />
-                    ))}
-                </Grid>
-            </Grid>
-        </div>
-    );
+	return (
+		<div className="resume">
+			<div>
+				<h2 className="h2">Resume</h2>
+				<hr className="hr" />
+			</div>
+			<Grid container spacing={1}>
+				<Grid item xs={12} sm={12} md={6} lg={6}>
+					<Timeline>
+						<TimelineItem>
+							<TimelineSeparator>
+								<TimelineDot className="timelinedot">
+									<WorkIcon fontSize={"large"} />
+								</TimelineDot>
+								<TimelineConnector className="timeline__connector" />
+							</TimelineSeparator>
+							<TimelineContent className="timelinecomponent">
+								<strong> Working Experience</strong>
+							</TimelineContent>
+						</TimelineItem>
+					</Timeline>
+					{details.workExperience.map((work) => (
+						<TimelineComponent
+							className="timeline__list"
+							jobtitle={work.jobtitle}
+							jobexperienceyear={work.jobexperienceyear}
+							jobtext={work.jobtext}
+						/>
+					))}
+				</Grid>
+				<Grid item xs>
+					<Timeline>
+						<TimelineItem>
+							<TimelineSeparator>
+								<TimelineDot className="timelinedot">
+									<SchoolIcon fontSize="large" />
+								</TimelineDot>
+								<TimelineConnector className="timeline__connector" />
+							</TimelineSeparator>
+							<TimelineContent className="timelinecomponent">
+								<strong> Education</strong>
+							</TimelineContent>
+						</TimelineItem>
+					</Timeline>
+					{details.education.map((education) => (
+						<TimelineComponent
+							instuitionName={education.instuitionName}
+							instuitiondate={education.instuitiondate}
+							instuitiontext={education.instuitiontext}
+							instuitioncourses={education.instuitioncourses}
+						/>
+					))}
+				</Grid>
+			</Grid>
+		</div>
+	);
 };
 
 export default ResumePage;

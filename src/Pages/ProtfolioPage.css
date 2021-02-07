@@ -1,52 +1,53 @@
 .protfolio__grid {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 30px;
-    background: transparent !important;
-    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
-    border-radius: 10px;
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 30px;
+	background: transparent !important;
+	box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+	border-radius: 10px;
 }
 
 .projects__grid {
-    padding: 25px;
-    justify-content: space-around;
+	padding: 25px;
+	justify-content: space-around;
 }
 
 .projects__grid__paper {
-    background-color: #f9f9f9 !important;
+	background-color: #f9f9f9 !important;
 }
 .card {
-    width: auto;
-    height: 350px;
-    overflow: hidden;
-    transition: ease-in;
+	width: auto;
+	height: 350px;
+	overflow: hidden;
+	transition: ease-in;
 }
 .card:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .card__img {
-    width: 283px;
-    height: 250px;
+	width: 283px;
+	height: 250px;
+	object-fit: contain;
 }
 
 .figure_caption {
-    padding: 10px;
+	padding: 10px;
 }
 
 .figure_title {
-    font-size: 14px;
-    color: #000;
-    font-weight: bolder;
+	font-size: 14px;
+	color: #000;
+	font-weight: bolder;
 }
 
 .figure_description {
-    font-size: 13px;
-    color: #989898;
-    line-height: 18px;
-    display: block;
-    font-weight: 500;
+	font-size: 13px;
+	color: #989898;
+	line-height: 18px;
+	display: block;
+	font-weight: 500;
 }
 .link {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
