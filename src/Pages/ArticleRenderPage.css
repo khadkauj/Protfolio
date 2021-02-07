@@ -6,6 +6,8 @@
     flex-direction: column;
     background: transparent !important;
     box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+    margin-bottom: 40px;
+    border-radius: 10px !important;
 }
 .article_span {
     display: flex;

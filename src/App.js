@@ -81,7 +81,12 @@ function App() {
                                 </Grid>
                             </Route>
                             <Route exact path="/Blogs/Guests/:id">
-                                <ArticleRenderPage />
+                                <Grid item xs={12} ms={12} md={12} lg={12}>
+                                    <ArticleRenderPage />
+                                </Grid>
+                                <Grid item xs={12} ms={12} md={12} lg={12}>
+                                    <FooterComponent />
+                                </Grid>
                             </Route>
                             <Route exact path="/">
                                 <Grid item xs={12} sm={12} md={4} lg={4}>
