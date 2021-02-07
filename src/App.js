@@ -1,6 +1,6 @@
 import { Grid } from "@material-ui/core";
 import { Container } from "@material-ui/core";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import ProfileSidebarComponent from "./Components/ProfileSidebarComponent";
@@ -14,96 +14,96 @@ import BlogPage from "./Pages/BlogPage";
 import AddGuestArticle from "./Pages/AddGuestArticle";
 import ArticleRenderPage from "./Pages/ArticleRenderPage";
 function App() {
-    return (
-        <div className="App">
-            <Router>
-                <Container>
-                    <Grid container spacing={5}>
-                        <Switch>
-                            <Route path="/Home">
-                                <Grid item xs={12} sm={12} md={4} lg={4}>
-                                    <ProfileSidebarComponent />
-                                </Grid>
-                                <Grid item xs sm={12} md={8} lg={8}>
-                                    <HeaderComponent />
-                                    <AboutMePage />
-                                    <FooterComponent />
-                                </Grid>
-                            </Route>
-                            <Route path="/Resume">
-                                <Grid item xs={12} sm={12} md={4} lg={4}>
-                                    <ProfileSidebarComponent />
-                                </Grid>
-                                <Grid item xs sm={12} md={8} lg={8}>
-                                    <HeaderComponent />
-                                    <ResumePage />
-                                    <FooterComponent />
-                                </Grid>
-                            </Route>
-                            <Route path="/Contact">
-                                <Grid item xs={12} sm={12} md={4} lg={4}>
-                                    <ProfileSidebarComponent />
-                                </Grid>
-                                <Grid item xs sm={12} md={8} lg={8}>
-                                    <HeaderComponent />
-                                    <ContactPage />
-                                    <FooterComponent />
-                                </Grid>
-                            </Route>
-                            <Route path="/Protfolio">
-                                <Grid item xs={12} sm={12} md={4} lg={4}>
-                                    <ProfileSidebarComponent />
-                                </Grid>
-                                <Grid item xs sm={12} md={8} lg={8}>
-                                    <HeaderComponent />
-                                    <ProtfolioPage />
-                                    <FooterComponent />
-                                </Grid>
-                            </Route>
-                            <Route exact path="/Blogs">
-                                <Grid item xs={12} sm={12} md={4} lg={4}>
-                                    <ProfileSidebarComponent />
-                                </Grid>
-                                <Grid item xs sm={12} md={8} lg={8}>
-                                    <HeaderComponent />
-                                    <BlogPage />
-                                    <FooterComponent />
-                                </Grid>
-                            </Route>
-                            <Route path="/GuestArticle">
-                                <Grid item xs={12} sm={12} md={4} lg={4}>
-                                    <ProfileSidebarComponent />
-                                </Grid>
-                                <Grid item xs sm={12} md={8} lg={8}>
-                                    <HeaderComponent />
-                                    <AddGuestArticle />
-                                    <FooterComponent />
-                                </Grid>
-                            </Route>
-                            <Route exact path="/Blogs/Guests/:id">
-                                <Grid item xs={12} ms={12} md={12} lg={12}>
-                                    <ArticleRenderPage />
-                                </Grid>
-                                <Grid item xs={12} ms={12} md={12} lg={12}>
-                                    <FooterComponent />
-                                </Grid>
-                            </Route>
-                            <Route exact path="/">
-                                <Grid item xs={12} sm={12} md={4} lg={4}>
-                                    <ProfileSidebarComponent />
-                                </Grid>
-                                <Grid item xs sm={12} md={8} lg={8}>
-                                    <HeaderComponent />
-                                    <AboutMePage />
-                                    <FooterComponent />
-                                </Grid>
-                            </Route>
-                        </Switch>
-                    </Grid>
-                </Container>
-            </Router>
-        </div>
-    );
+	return (
+		<div className="App">
+			<Router>
+				<Container>
+					<Grid container spacing={5}>
+						<Switch>
+							<Route path="/Home">
+								<Grid item xs={12} sm={12} md={4} lg={4}>
+									<ProfileSidebarComponent />
+								</Grid>
+								<Grid item xs sm={12} md={8} lg={8}>
+									<HeaderComponent />
+									<AboutMePage />
+									<FooterComponent />
+								</Grid>
+							</Route>
+							<Route path="/Resume">
+								<Grid item xs={12} sm={12} md={4} lg={4}>
+									<ProfileSidebarComponent />
+								</Grid>
+								<Grid item xs sm={12} md={8} lg={8}>
+									<HeaderComponent />
+									<ResumePage />
+									<FooterComponent />
+								</Grid>
+							</Route>
+							<Route path="/Contact">
+								<Grid item xs={12} sm={12} md={4} lg={4}>
+									<ProfileSidebarComponent />
+								</Grid>
+								<Grid item xs sm={12} md={8} lg={8}>
+									<HeaderComponent />
+									<ContactPage />
+									<FooterComponent />
+								</Grid>
+							</Route>
+							<Route path="/Protfolio">
+								<Grid item xs={12} sm={12} md={4} lg={4}>
+									<ProfileSidebarComponent />
+								</Grid>
+								<Grid item xs sm={12} md={8} lg={8}>
+									<HeaderComponent />
+									<ProtfolioPage />
+									<FooterComponent />
+								</Grid>
+							</Route>
+							<Route exact path="/Blogs">
+								<Grid item xs={12} sm={12} md={4} lg={4}>
+									<ProfileSidebarComponent />
+								</Grid>
+								<Grid item xs sm={12} md={8} lg={8}>
+									<HeaderComponent />
+									<BlogPage />
+									<FooterComponent />
+								</Grid>
+							</Route>
+							<Route path="/GuestArticle">
+								<Grid item xs={12} sm={12} md={4} lg={4}>
+									<ProfileSidebarComponent />
+								</Grid>
+								<Grid item xs sm={12} md={8} lg={8}>
+									<HeaderComponent />
+									<AddGuestArticle />
+									<FooterComponent />
+								</Grid>
+							</Route>
+							<Route exact path="/Blogs/Guests/:id">
+								<Grid item xs={12} ms={12} md={12} lg={12}>
+									<ArticleRenderPage />
+								</Grid>
+								<Grid item xs={12} ms={12} md={12} lg={12}>
+									<FooterComponent />
+								</Grid>
+							</Route>
+							<Route exact path="/">
+								<Grid item xs={12} sm={12} md={4} lg={4}>
+									<ProfileSidebarComponent />
+								</Grid>
+								<Grid item xs sm={12} md={8} lg={8}>
+									<HeaderComponent />
+									<AboutMePage />
+									<FooterComponent />
+								</Grid>
+							</Route>
+						</Switch>
+					</Grid>
+				</Container>
+			</Router>
+		</div>
+	);
 }
 
 export default App;

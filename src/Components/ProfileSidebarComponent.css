@@ -1,40 +1,70 @@
 .profile {
-    background: white;
-    width: 100%;
-    display: inline-block;
-    background: transparent !important;
-    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
-    border-radius: 20px;
-    padding: 10px;
-    position: sticky;
+	background: white;
+	width: 100%;
+	display: inline-block;
+	background: transparent !important;
+	box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+	border-radius: 20px;
+	padding: 10px;
+	position: sticky;
 }
 .my__details {
-    margin-top: 0px;
-    padding: 10px;
+	margin-top: 0px;
+	padding: 10px;
 }
 
 .my__details__span {
-    font-size: medium;
-    opacity: 0.6;
+	font-size: medium;
+	opacity: 0.6;
 }
 .figure {
-    margin-top: -5px;
-    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
-    clip-path: polygon(0 9%, 100% 0, 100% 91%, 0% 100%);
-    width: 100%;
+	margin-top: -5px;
+	-webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+	clip-path: polygon(0 9%, 100% 0, 100% 91%, 0% 100%);
+	width: 100%;
 }
 .img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    width: 100%;
-    object-fit: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	width: 100%;
+	object-fit: contain;
 }
 
 .__Button {
-    margin: 1px auto 30px;
-    display: grid;
-    place-items: center;
-    margin-top: 80px;
+	margin: 1px auto 30px;
+	display: grid;
+	place-items: center;
+	margin-top: 80px;
+}
+
+.__Button_a:hover {
+	text-decoration: none !important;
+}
+
+.square_color {
+	display: flex;
+	margin: 0px;
+}
+
+.square {
+	height: 15px;
+	width: 15px;
+	margin: 0px 5px;
+	margin-left: 10px;
+}
+.blue {
+	background-color: #00b4d9;
+}
+
+.red {
+	background-color: #d81300;
+}
+
+.green {
+	background-color: #52bf00;
+}
+.yellow {
+	background-color: #ffc520;
 }

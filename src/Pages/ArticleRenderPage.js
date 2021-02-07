@@ -6,15 +6,15 @@ import { FacebookProvider, Like, ShareButton, Profile } from "react-facebook";
 import "./ArticleRenderPage.css";
 import { Paper } from "@material-ui/core";
 const ArticleRenderPage = () => {
-    const [Article, setArticle] = useState([]);
-    const { id } = useParams();
-    useEffect(() => {
-        database.doc(`/Articles/${id}`).onSnapshot((snapshot) => setArticle(snapshot.data()));
-    }, [id]);
-    console.log("Article is :", Article);
-    return (
-        <Paper className="article">
-            {/* <FacebookProvider appId="1268503136884162" className="fb">
+	const [Article, setArticle] = useState([]);
+	const { id } = useParams();
+	useEffect(() => {
+		database.doc(`/Articles/${id}`).onSnapshot((snapshot) => setArticle(snapshot.data()));
+	}, [id]);
+	// console.log("Article is :", Article);
+	return (
+		<Paper className="article">
+			{/* <FacebookProvider appId="1268503136884162" className="fb">
                     <Like href="http://www.facebook.com" colorScheme="dark" showFaces share>
                         Like
                     </Like>
@@ -29,16 +29,16 @@ const ArticleRenderPage = () => {
                     </Profile>
                 </FacebookProvider> */}
 
-            <span className="article_span">
-                Published on: {new Date(Article?.date?.toDate()).toUTCString().slice(0, 50)} By:
-                <strong className="article_span_strong">{Article?.name}</strong>
-            </span>
-            <h4 className="article__title">{Article?.articleTitle}</h4>
-            <img src={`https://source.unsplash.com/collection/8806655/640*480`} alt="" className="article__image" />
+			<span className="article_span">
+				Published on: {new Date(Article?.date?.toDate()).toUTCString().slice(0, 50)} By:
+				<strong className="article_span_strong">{Article?.name}</strong>
+			</span>
+			<h4 className="article__title">{Article?.articleTitle}</h4>
+			<img src={`https://source.unsplash.com/collection/8806655/640*480`} alt="" className="article__image" />
 
-            <p className="article__text">{Article?.articleText}</p>
-        </Paper>
-    );
+			<p className="article__text">{Article?.articleText}</p>
+		</Paper>
+	);
 };
 
 export default ArticleRenderPage;

@@ -51,3 +51,21 @@
 .link {
 	text-decoration: none !important;
 }
+
+.tab {
+	color: var(--main-color) !important;
+}
+
+.PrivateTabIndicator-root-1 {
+	background-color: var(--main-color) !important;
+}
+.PrivateTabIndicator-colorPrimary-1 {
+	background-color: var(--main-color) !important;
+}
+.MuiTabs-indicator {
+	background-color: var(--main-color) !important;
+}
+
+.PrivateTabIndicator-colorPrimary-2 {
+	background-color: var(--main-color) !important;
+}

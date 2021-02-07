@@ -10,7 +10,7 @@ import { Typography } from "@material-ui/core";
 import { CardMedia } from "@material-ui/core";
 const ProtfolioPage = () => {
 	const [tabValue, settabValue] = useState("All");
-	console.log(tabValue);
+	// console.log(tabValue);
 	return (
 		<Grid container className="protfolio__grid">
 			<Grid item xs={12}>
@@ -29,10 +29,14 @@ const ProtfolioPage = () => {
 							scrollButtons="on"
 							aria-label="scrollable force tabs example"
 						>
-							<Tab label="All" value="All" />
-							<Tab label="Fullstack" value="Fullstack" />
-							<Tab label="Frontend" value="Frontend" />
-							<Tab label="Backend" value="Backend" />
+							<Tab label="All" value="All" className={tabValue === "All" ? "tab" : null} />
+							<Tab
+								label="Fullstack"
+								value="Fullstack"
+								className={tabValue === "Fullstack" ? "tab" : null}
+							/>
+							<Tab label="Frontend" value="Frontend" className={tabValue === "Frontend" ? "tab" : null} />
+							<Tab label="Backend" value="Backend" className={tabValue === "Backend" ? "tab" : null} />
 						</Tabs>
 					</Paper>
 				</Grid>

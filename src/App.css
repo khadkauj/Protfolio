@@ -1,32 +1,37 @@
 :root {
-    --main-color: #ffc500;
+	--main-color: #ffc500;
 }
 
 .App {
-    margin-top: 50px;
-    background-image: url("./pic.png");
+	margin-top: 50px;
+	background-image: url("./pic.png");
 }
 
 @media only screen and (max-width: 991px) {
-    .App {
-        margin-top: 10px;
-    }
+	.App {
+		margin-top: 10px;
+	}
 }
 
 .hr {
-    border-width: 10px;
-    width: 5rem;
-    margin-top: -20px;
-    background-color: #ffb100 !important;
-    opacity: 0.3;
+	border-width: 10px;
+	width: 5rem;
+	margin-top: -20px;
+	background-color: #ffb100 !important;
+	opacity: 0.3;
 }
 
 .p10 {
-    padding: 10px;
+	padding: 10px;
 }
 .p5 {
-    padding: 5px;
+	padding: 5px;
 }
 .p10l {
-    padding-left: 10px;
+	padding-left: 10px;
+}
+
+.A {
+	text-decoration: none !important;
+	color: inherit !important;
 }
