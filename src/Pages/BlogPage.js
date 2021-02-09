@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card, CardActionArea, Grid } from "@material-ui/core";
-import Blogs from "../Blogs";
 
 import "./BlogPage.css";
-import { Link, NavLink, useHistory } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { database } from "../firebase";
 const BlogPage = () => {
 	const [Article, setArticle] = useState([]);

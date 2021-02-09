@@ -1,7 +1,7 @@
 import { Grid } from "@material-ui/core";
 import { Container } from "@material-ui/core";
-import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route, HashRouter } from "react-router-dom";
 import "./App.css";
 import ProfileSidebarComponent from "./Components/ProfileSidebarComponent";
 import HeaderComponent from "./Components/HeaderComponent";

@@ -58,11 +58,12 @@ const AddGuestArticle = () => {
 					onChange={(e) => settextArticle(e.target.value)}
 					className="form_textarea text"
 					rows="15"
+					colums="50"
 					type="text"
 					required
 					placeholder="Put down your story here..."
 				/>
-				<input type="submit" value="submit" />
+				<input type="submit" value="submit" className="add__button" />
 			</form>
 		</div>
 	);
