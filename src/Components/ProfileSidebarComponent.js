@@ -8,9 +8,9 @@ import details from "../MydetailsObject";
 
 import "./ProfileSidebarComponent.css";
 const ProfileSidebarComponent = () => {
-	const [color, setcolor] = useState("#ffc520");
+	const [color, setcolor] = useState("");
 	useEffect(() => {
-		document.documentElement.style.setProperty("--main-color", color);
+		document.documentElement.style.setProperty("--main-color", color ? color : "#ffc520");
 	}, [color]);
 
 	return (

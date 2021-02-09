@@ -29,7 +29,7 @@ const BlogPage = () => {
 					<hr className="hr" />
 				</div>
 				<Button size={"small"} variant="contained" className="guest__article">
-					<NavLink to="/GuestArticle" className="navlink">
+					<NavLink to="/Protfolio/GuestArticle" className="navlink">
 						Guest Article
 					</NavLink>
 				</Button>
