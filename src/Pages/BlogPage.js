@@ -46,7 +46,10 @@ const BlogPage = () => {
 											className="blog_grid_figure"
 										/>
 										<figcaption className="figure__caption">
-											<span className="span__1">{a_Article?.data?.articleTitle}</span>
+											<span className="span__1">
+												{a_Article?.data?.articleTitle}
+												{" by " + a_Article?.data?.name}
+											</span>
 											<br />
 											<span className="span__2">
 												{a_Article?.data?.articleText?.slice(0, 20)}...

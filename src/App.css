@@ -1,5 +1,5 @@
 :root {
-	--main-color: #ffc500;
+	/* --main-color: #ffc500; */
 }
 
 .App {
@@ -17,7 +17,7 @@
 	border-width: 10px;
 	width: 5rem;
 	margin-top: -20px;
-	background-color: #ffb100 !important;
+	background-color: var(--main-color) !important;
 	opacity: 0.3;
 }
 

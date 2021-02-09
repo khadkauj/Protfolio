@@ -10,16 +10,41 @@ import "./ProfileSidebarComponent.css";
 const ProfileSidebarComponent = () => {
 	const [color, setcolor] = useState("");
 	useEffect(() => {
-		document.documentElement.style.setProperty("--main-color", color ? color : "#ffc520");
+		// console.log("local: ", localStorage.getItem("--main-color"));
+		document.documentElement.style.setProperty("--main-color", localStorage.getItem("--main-color"));
 	}, [color]);
 
 	return (
 		<div className="profile">
 			<div className="square_color">
-				<div className="square blue" onClick={() => setcolor("#00b4d9")}></div>
-				<div className="square red" onClick={() => setcolor("#d81300")}></div>
-				<div className="square green" onClick={() => setcolor("#52bf00")}></div>
-				<div className="square yellow" onClick={() => setcolor("#ffc520")}></div>
+				<div
+					className="square blue"
+					onClick={() => {
+						localStorage.setItem("--main-color", "#00b4d9");
+						setcolor("blue");
+					}}
+				></div>
+				<div
+					className="square red"
+					onClick={() => {
+						localStorage.setItem("--main-color", "#d81300");
+						setcolor("red");
+					}}
+				></div>
+				<div
+					className="square green"
+					onClick={() => {
+						localStorage.setItem("--main-color", "#52bf00");
+						setcolor("green");
+					}}
+				></div>
+				<div
+					className="square yellow"
+					onClick={() => {
+						localStorage.setItem("--main-color", "#ffc520");
+						setcolor("yellow");
+					}}
+				></div>
 			</div>
 			<div className="my__details">
 				<Typography variant="h6">{details.name}</Typography>

@@ -50,7 +50,6 @@
 }
 
 .text {
-	width: fit-content !important;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	border-right: 1px solid black;
@@ -72,4 +71,8 @@
 }
 .form_jptname {
 	padding: 0 10px;
+}
+
+#standard-required {
+	width: 100% !important;
 }

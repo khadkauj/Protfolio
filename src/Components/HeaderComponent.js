@@ -12,7 +12,7 @@ const HeaderComponent = (props) => {
 
 	return (
 		<Navbar bg="light" expand="md lg" className="nav__container__navbar">
-			<Navbar.Brand as={NavLink} to="/home">
+			<Navbar.Brand as={NavLink} to="/Protfolio/home">
 				<HomeIcon fontSize="small" className="home__icon" />
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />

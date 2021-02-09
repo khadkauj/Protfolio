@@ -37,7 +37,7 @@ const ContactPage = () => {
 							<Typography className="tyopgraphy__contactform">Contact Form</Typography>
 						</Grid>
 						<form className="form_jptname" noValidate autoComplete="off" onSubmit={sendEmail}>
-							<Grid item xs={12} sm={6} md={6} lg={6}>
+							<Grid item xs={12} sm={12} md={12} lg={12}>
 								<input
 									value={name}
 									onChange={(e) => setname(e.target.value)}
@@ -48,7 +48,7 @@ const ContactPage = () => {
 									name="name"
 								/>
 							</Grid>
-							<Grid item xs={12} sm={6} md={6} lg={6}>
+							<Grid item xs={12} sm={12} md={12} lg={12}>
 								<input
 									value={email}
 									onChange={(e) => setemail(e.target.value)}
@@ -60,7 +60,7 @@ const ContactPage = () => {
 									name="email"
 								/>
 							</Grid>
-							<Grid item xs={12} sm={6} md={6} lg={12}>
+							<Grid item xs={12} sm={12} md={12} lg={12}>
 								<textarea
 									id="standard-required"
 									label="Message..."
