@@ -21,7 +21,7 @@ const AddGuestArticle = () => {
 			date: new Date(),
 			timestamp: firebase.firestore.FieldValue.serverTimestamp(),
 		});
-		history.push("/Blogs");
+		history.push("/Protfolio/Blogs");
 	};
 	return (
 		<div>

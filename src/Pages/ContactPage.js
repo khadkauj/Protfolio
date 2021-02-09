@@ -70,7 +70,7 @@ const ContactPage = () => {
 									className="form_textarea text"
 									type="text"
 									required
-									placeholder="Put down your message here..."
+									placeholder="Put down your message/offer/idea here..."
 									name="message"
 								/>
 							</Grid>

@@ -20,7 +20,7 @@ const HeaderComponent = (props) => {
 				<Nav className="mr-auto">
 					<Nav.Link
 						as={NavLink}
-						to="/Resume"
+						to="/Protfolio/Resume"
 						activeStyle={{
 							fontWeight: "bold",
 						}}
@@ -30,7 +30,7 @@ const HeaderComponent = (props) => {
 					</Nav.Link>
 					<Nav.Link
 						as={NavLink}
-						to="/Portfolio"
+						to="/Protfolio/Portfolio"
 						activeStyle={{
 							fontWeight: "bold",
 						}}
@@ -40,7 +40,7 @@ const HeaderComponent = (props) => {
 					</Nav.Link>
 					<Nav.Link
 						as={NavLink}
-						to="/Blogs"
+						to="/Protfolio/Blogs"
 						activeStyle={{
 							fontWeight: "bold",
 						}}
@@ -50,7 +50,7 @@ const HeaderComponent = (props) => {
 					</Nav.Link>
 					<Nav.Link
 						as={NavLink}
-						to="/Contact"
+						to="/Protfolio/Contact"
 						activeStyle={{
 							fontWeight: "bold",
 						}}
@@ -60,7 +60,7 @@ const HeaderComponent = (props) => {
 					</Nav.Link>
 				</Nav>
 				<div className="button">
-					<Link to="/Contact" className="A">
+					<Link to="/Protfolio/Contact" className="A">
 						<ButtonComponent text={"Hire me"} icon={<TelegramIcon />} />
 					</Link>
 				</div>

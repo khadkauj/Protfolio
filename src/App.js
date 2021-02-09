@@ -20,7 +20,7 @@ function App() {
 				<Container>
 					<Grid container spacing={5}>
 						<Switch>
-							<Route exact path="/Home">
+							<Route exact path="/Protfolio/Home">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -30,7 +30,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route exact path="/Resume">
+							<Route exact path="/Protfolio/Resume">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -40,7 +40,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route exact path="/Contact">
+							<Route exact path="/Protfolio/Contact">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -50,7 +50,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route exact path="/Portfolio">
+							<Route exact path="/Protfolio/Portfolio">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -60,7 +60,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route exact path="/Blogs">
+							<Route exact path="/Protfolio/Blogs">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -70,7 +70,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route exact path="/GuestArticle">
+							<Route exact path="/Protfolio/GuestArticle">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -80,7 +80,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route exact path="/Blogs/Guests/:id">
+							<Route exact path="/Protfolio/Blogs/Guests/:id">
 								<Grid item xs={12} ms={12} md={12} lg={12}>
 									<ArticleRenderPage />
 								</Grid>

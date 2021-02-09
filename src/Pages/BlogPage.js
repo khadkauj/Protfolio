@@ -37,7 +37,7 @@ const BlogPage = () => {
 			<Grid container className="Blogs__grid" spacing={4}>
 				{Article?.map((a_Article, i) => (
 					<Grid key={a_Article?.id} item xs={12} sm={6} md={4} lg={4}>
-						<Link to={`/Blogs/Guests/${a_Article?.id}`} className="A">
+						<Link to={`/Protfolio/Blogs/Guests/${a_Article?.id}`} className="A">
 							<Card className="card">
 								<CardActionArea>
 									<figure>
