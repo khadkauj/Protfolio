@@ -17,10 +17,9 @@ const AboutMePage = () => {
 				<Grid container>
 					<Grid item xs={12}>
 						<p className="aboutme__text">
-							My name is Ujjwal Khadka (you can call me Uj) . I am currently in my first year with a major
-							in computer science here at Jacobs University Bremen. <br /> In my spare time I read
-							philosophical poems and essays. Most of the time, I think about tasty food. I'm Kasturi, of
-							both world.
+							Ujjwal here (you can call me Uj) . I am a first year CS major student at Jacobs University
+							Bremen. Nothing much. <br /> <br /> In spare time, I read philosophical poems. Most of the
+							time, I think about delicious foods. I'm a Kasturi, of both worlds.
 						</p>
 					</Grid>
 				</Grid>

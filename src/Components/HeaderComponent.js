@@ -30,7 +30,7 @@ const HeaderComponent = (props) => {
 					</Nav.Link>
 					<Nav.Link
 						as={NavLink}
-						to="/Protfolio"
+						to="/Portfolio"
 						activeStyle={{
 							fontWeight: "bold",
 						}}

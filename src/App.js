@@ -20,7 +20,7 @@ function App() {
 				<Container>
 					<Grid container spacing={5}>
 						<Switch>
-							<Route path="/Home">
+							<Route exact path="/Home">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -30,7 +30,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route path="/Resume">
+							<Route exact path="/Resume">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -40,7 +40,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route path="/Contact">
+							<Route exact path="/Contact">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -50,7 +50,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route path="/Protfolio">
+							<Route exact path="/Portfolio">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -70,7 +70,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route path="/GuestArticle">
+							<Route exact path="/GuestArticle">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
@@ -88,7 +88,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route exact path="/">
+							<Route path="/">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
