@@ -11,7 +11,10 @@ const ProfileSidebarComponent = () => {
 	const [color, setcolor] = useState("");
 	useEffect(() => {
 		// console.log("local: ", localStorage.getItem("--main-color"));
-		document.documentElement.style.setProperty("--main-color", localStorage.getItem("--main-color"));
+		document.documentElement.style.setProperty(
+			"--main-color",
+			localStorage.getItem("--main-color") ? localStorage.getItem("--main-color") : "#ffc520"
+		);
 	}, [color]);
 
 	return (
