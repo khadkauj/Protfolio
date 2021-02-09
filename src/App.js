@@ -1,7 +1,7 @@
 import { Grid } from "@material-ui/core";
 import { Container } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, HashRouter } from "react-router-dom";
 import "./App.css";
 import ProfileSidebarComponent from "./Components/ProfileSidebarComponent";
 import HeaderComponent from "./Components/HeaderComponent";
@@ -19,7 +19,7 @@ function App() {
 			<Router>
 				<Container>
 					<Grid container spacing={5}>
-						<Switch>
+						<HashRouter>
 							<Route exact path="/Protfolio/Home">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
@@ -98,7 +98,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-						</Switch>
+						</HashRouter>
 					</Grid>
 				</Container>
 			</Router>
