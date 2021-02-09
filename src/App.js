@@ -88,7 +88,7 @@ function App() {
 									<FooterComponent />
 								</Grid>
 							</Route>
-							<Route path="/">
+							<Route exact path="/">
 								<Grid item xs={12} sm={12} md={4} lg={4}>
 									<ProfileSidebarComponent />
 								</Grid>
