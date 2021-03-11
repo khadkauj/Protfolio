@@ -58,7 +58,7 @@ const ProfileSidebarComponent = () => {
 				<img
 					className="img"
 					src={
-						"https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/125055340_104218824843267_6708006941443392260_o.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=we-8ZqRTq0gAX-R99LB&_nc_ht=scontent-frx5-1.xx&oh=24579a076cf57244ae9f7b2e21f95941&oe=604377F6"
+						"https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/133659903_131853168746499_864616655102133084_o.jpg?_nc_cat=100&ccb=1-3&_nc_sid=730e14&_nc_ohc=RnIXvaUb4BsAX-lbcKG&_nc_ht=scontent-frx5-1.xx&oh=dc7d28273c0d75296f5d84c0ae1dfb9a&oe=606E88D7"
 					}
 					alt="profilepic"
 				/>
