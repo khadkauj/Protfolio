@@ -17,9 +17,9 @@ const AboutMePage = () => {
 				<Grid container>
 					<Grid item xs={12}>
 						<p className="aboutme__text">
-							Ujjwal here (you can call me Uj) . I am a first year CS major student at Jacobs University
-							Bremen. Nothing much. <br /> <br /> In spare time, I read philosophical poems. Most of the
-							time, I think about delicious foods. I'm a Kasturi, of both worlds.
+							First year CS major student here at Jacobs University Bremen.<br /> <br />
+							Tynag Tyang Dhish!!! <br /> <br /> In der Freizeit liest Philosophien/Gedichte. Denkt an leckeres Essen.
+							<br /> <br /> A Kasturi, of both worlds.
 						</p>
 					</Grid>
 				</Grid>
@@ -48,7 +48,7 @@ const AboutMePage = () => {
 				<hr className="hr" />
 				<Grid container className="skills_grid">
 					{details.skills.map((skill) => (
-						<Grid item xs={12} sm={6} md={3} lg={3}>
+						<Grid item xs={12} sm={6} md={4} lg={4}>
 							<h4 className="skill__name">
 								<code>{skill.name}</code>
 							</h4>

@@ -7,6 +7,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import "./ContactPage.css";
 const ContactPage = () => {
@@ -21,7 +22,7 @@ const ContactPage = () => {
 				// console.log(result.text);
 				setname("");
 				setemail("");
-				setmessage("->>>Your message has been sent, I'll get back to you asap.");
+				setmessage("->>>Your message/offer/idea has been sent, I'll get back to you asap.");
 			},
 			(error) => {
 				// console.log(error.text);
@@ -70,7 +71,7 @@ const ContactPage = () => {
 									className="form_textarea text"
 									type="text"
 									required
-									placeholder="Put down your message/offer/idea here..."
+									placeholder="Put down your message/offer/idea here with your name and email address..."
 									name="message"
 								/>
 							</Grid>
@@ -92,6 +93,9 @@ const ContactPage = () => {
 						</p>
 					</Grid>
 					<Grid container className="grid_icons">
+						<a href="https://www.linkedin.com/in/khadkauj/" className="A">
+							<LinkedInIcon fontSize="small" className="icons" />
+						</a>
 						<a href="https://www.facebook.com/ujjwal.khadka.9699523/" className="A">
 							<FacebookIcon fontSize="small" className="icons" />
 						</a>

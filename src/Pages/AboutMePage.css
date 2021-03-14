@@ -42,10 +42,6 @@
     padding: 20px;
 }
 
-.skills_grid {
-    justify-content: space-around;
-}
-
 .technology__ {
     display: flex;
     align-items: center;
@@ -71,3 +67,4 @@
     font-size: large;
     font-family: cursive !important;
 }
+

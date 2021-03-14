@@ -1,5 +1,9 @@
 import WorkIcon from "@material-ui/icons/Work";
-import { Link } from "react-router-dom";
+import chatbox from "./assests/chatbox.jpg"
+import profile from "./assests/profile.jpg"
+import pic from "./pic.jpg"
+
+
 const details = {
 	name: "Ujjwal Khadka",
 	title: "Work Student",
@@ -66,11 +70,11 @@ const details = {
 	skills: [
 		{
 			name: "Frontend Skills",
-			technologies: ["HTML5", "CSS3", "ReactJS", "Bootstrap"],
+			technologies: ["ReactJS", "Angular", "HTML5", "CSS3/Sass", ],
 		},
 		{
 			name: "Backend SKills",
-			technologies: ["NodeJS", "Express"],
+			technologies: ["NodeJS", "Express", "NestJS"],
 		},
 		{
 			name: "Database Skill",
@@ -78,7 +82,11 @@ const details = {
 		},
 		{
 			name: "Other Progaming skills",
-			technologies: ["C/C++", "Haskell", "OOP", "Lua/Love2D"],
+			technologies: ["C/C++", "Javascript", "Typescript", "OpenCV", "OOP", "Haskell","Lua/Love2D"],
+		},
+		{
+			name: "Development Tools",
+			technologies: ["VS code", "Visual Studio 2019", "Sublime Text Editor", "VCS Git", "Postman"],
 		},
 	],
 	projects: [
@@ -87,16 +95,14 @@ const details = {
 			title: "Fullstack MERN App",
 			description: "Shows where you will be roaming next year by fetching random images from API",
 			demoLink: "https://khadkauj.github.io/FullstackApp/",
-			image:
-				"https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/147027643_159323175999498_197650222610487487_o.jpg?_nc_cat=105&ccb=2&_nc_sid=730e14&_nc_ohc=9XwINViLf-IAX90tIHH&_nc_ht=scontent-frx5-1.xx&oh=3fa1351761fda4c915338b1c7e421a6c&oe=60462021",
+			image: "https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/147027643_159323175999498_197650222610487487_o.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=ySWq6fZitLoAX_Yf4v_&_nc_ht=scontent-frx5-1.xx&oh=56832a884c0301fc98eb1c9c8b7bcdcc&oe=6071A1A1",
 		},
 		{
 			tag: "Fullstack",
 			title: "Realtime-Chatbox",
 			description: "A real-time Messenger like app to chat with your friend..",
 			demoLink: "https://khadkauj.github.io/chatbox/",
-			image:
-				"https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/147094368_159323165999499_4039701925295920226_o.jpg?_nc_cat=102&ccb=2&_nc_sid=730e14&_nc_ohc=zg-EBnreQ_sAX_tAnOZ&_nc_ht=scontent-frt3-1.xx&oh=22ef2260982107e9d3d0a0e04ab8325c&oe=6044CD41",
+			image: "https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/147094368_159323165999499_4039701925295920226_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=730e14&_nc_ohc=go3IdyqeS84AX_Sqd-I&_nc_ht=scontent-frt3-1.xx&oh=03fa5489890af08f8d3cb88682dcd32e&oe=60744341",
 		},
 		{
 			tag: "Fullstack",
@@ -104,7 +110,7 @@ const details = {
 			description: "LinkedIn clone that lets you login and post your ideas.",
 			demoLink: "https://khadkauj.github.io/my-news/",
 			image:
-				"https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/148424503_159323162666166_126783620619360518_o.jpg?_nc_cat=106&ccb=2&_nc_sid=730e14&_nc_ohc=96HCUIHevXwAX8CgaQO&_nc_ht=scontent-frt3-1.xx&oh=341a5942d2c83986263056ad09ff7fca&oe=60471E75",
+				"https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/148424503_159323162666166_126783620619360518_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=f_eHzIIuJ5kAX8ZB3C6&_nc_ht=scontent-frt3-1.xx&oh=f24fa91f6161aa6f1da597f1286eab63&oe=60729FF5",
 		},
 
 		{
@@ -113,17 +119,8 @@ const details = {
 			description: "A Tinder-like-Clone where you can share your photo and swap people",
 			demoLink: "https://khadkauj.github.io/lovebot/",
 			image:
-				"https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/147040735_159323189332830_3474997453812595971_o.jpg?_nc_cat=109&ccb=2&_nc_sid=730e14&_nc_ohc=tNjY-MFfOc0AX9g0Fc9&_nc_ht=scontent-frt3-1.xx&oh=327fff8806c9d34af6881ab5dd7e6781&oe=6044F533",
+				"https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/148326163_159328879332261_7091389066543487271_o.jpg?_nc_cat=108&ccb=1-3&_nc_sid=730e14&_nc_ohc=VqbwtUSFYv8AX_c_vav&_nc_ht=scontent-frt3-1.xx&oh=89f909e2826dbe17ce47b021f89e789e&oe=60756D6D",
 		},
-		{
-			tag: "Frontend",
-			title: "RoboShop",
-			description: "A roboshop, which shows you a random robots.",
-			demoLink: " https://khadkauj.github.io/roboApp/",
-			image:
-				"https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/147040735_159323182666164_9112354116462442179_o.jpg?_nc_cat=110&ccb=2&_nc_sid=730e14&_nc_ohc=SYkxolNmwK8AX9vM9RN&_nc_ht=scontent-frx5-1.xx&oh=8d7e004789c40751ee42db8d1ae3f01a&oe=604601B5",
-		},
-
 		{
 			tag: "Backend",
 			title: "NodeJS Server Api",

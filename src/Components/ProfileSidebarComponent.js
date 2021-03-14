@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Grid, Typography } from "@material-ui/core";
-import { Button } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
+import profile from "../assests/profile.jpg";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import TimelineComponent from "./TimelineComponent";
 import ButtonComponent from "./ButtonComponent";
@@ -57,9 +57,7 @@ const ProfileSidebarComponent = () => {
 			<figure className="figure">
 				<img
 					className="img"
-					src={
-						"https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/133659903_131853168746499_864616655102133084_o.jpg?_nc_cat=100&ccb=1-3&_nc_sid=730e14&_nc_ohc=RnIXvaUb4BsAX-lbcKG&_nc_ht=scontent-frx5-1.xx&oh=dc7d28273c0d75296f5d84c0ae1dfb9a&oe=606E88D7"
-					}
+					src={profile}
 					alt="profilepic"
 				/>
 			</figure>

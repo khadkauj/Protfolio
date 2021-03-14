@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Card, CardActionArea, CardActions, CardContent, Grid } from "@material-ui/core";
+import profile from "../assests/profile.jpg";
 
 import "./ProtfolioPage.css";
 import { Tabs } from "@material-ui/core";
@@ -50,7 +51,7 @@ const ProtfolioPage = () => {
 									<Card className="card">
 										<CardActionArea>
 											<figure className="card_figure">
-												<img src={project.image} alt="Trulli" className="card__img" />
+												<img src={project.image} alt="cardName" className="card__img" />
 												<figcaption className="figure_caption">
 													<span className="figure_title">{project.title}</span>
 													<br />
