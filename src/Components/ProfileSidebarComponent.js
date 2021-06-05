@@ -70,7 +70,7 @@ const ProfileSidebarComponent = () => {
 			</div>
 			<div className="__Button">
 				<a
-					href="https://docs.google.com/document/d/1zyoh9OMvt9sCucEDeeYCxc_qlfzjCXn2FODEInizkUw/export?format=pdf"
+					href="https://docs.google.com/document/d/1OBCxEpgb2zPg80fUcXqCWj7URz4C1uC1enZBDsLUPi0/export?format=pdf"
 					className="__Button_a"
 				>
 					<ButtonComponent text={"Download CV"} icon={<GetAppIcon />} />
