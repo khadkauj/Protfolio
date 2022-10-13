@@ -8,17 +8,28 @@ const details = {
 	name: "Ujjwal Khadka",
 	title: "Work Student",
 	birthday: "06 December 1987",
-	job: "Looking for part-time offers*",
+	job: "Frontend Developer",
 	email: "u.khadka@jacobs-university.de",
 	educationName: "Jacobs University Bremen",
 	workExperience: [
+
+		
 		{
-			jobtitle: "WordPress Intern",
-			jobexperienceyear: "Jan 2020 - March 2020",
+			jobtitle: "Frontend Developer- Cerascreen Gmbh, Hamburg, Germany",
+			jobexperienceyear: "Jun 2021 - present",
 			jobtext: [
-				"Built websites using WordPress, wrote coding using HTML, CSS, and Javascript.",
-				"Prepared website proposals to present to clients, and Provided technical support to clients.",
-				"Designed new features for existing websites. ",
+				"Built overlays for existing websites using Ab Tasty,",
+				"Created ab tests, and helped convert thousands of visitors to customers,",
+				"Maintained and solved issues in the existing websites and tests",
+			],
+		},
+		{
+			jobtitle: "Fullstack Developer- Onea Care gmbh,  Düsseldorf, Germany",
+			jobexperienceyear: "March 2021 - June 2021",
+			jobtext: [
+				"Created dynamically upgradable JSON forms for different customers’ requirements using NGX Formly,",
+				"Designed new features like a chat box and for the existing website,",
+				"enabled the application to be ready for i18n,",
 				"Managed a user guide to help clients understand site features to increase visitor satisfaction.",
 			],
 		},
@@ -37,11 +48,7 @@ const details = {
 			instuitiondate: "2020 - 2023",
 			instuitiontext: " Computer Science, Class of 2023",
 			instuitioncourses: [
-				"Introduction to computer Science",
-				"Programming in C/C++",
-				"Introduction to Microeconomics",
-				"Calculus and Linear Algebra I",
-				"German A1.1",
+				
 			],
 		},
 	],
@@ -70,7 +77,7 @@ const details = {
 	skills: [
 		{
 			name: "Frontend Skills",
-			technologies: ["ReactJS", "Angular", "HTML5", "CSS3/Sass", ],
+			technologies: ["ReactJS", "Angular", "HTML5", "CSS3/Sass", 'Flask' ],
 		},
 		{
 			name: "Backend SKills",
@@ -78,56 +85,38 @@ const details = {
 		},
 		{
 			name: "Database Skill",
-			technologies: ["Firebase", "MongoDB"],
+			technologies: ["Firebase", "MongoDB", 'MYSQL'],
 		},
 		{
 			name: "Other Progaming skills",
-			technologies: ["C/C++", "Javascript", "Typescript", "OpenCV", "OOP", "Haskell","Lua/Love2D"],
+			technologies: ["C/C++", "Javascript", "Typescript", "Python","OpenCV", "OOP", "Haskell","Lua/Love2D"],
 		},
 		{
 			name: "Development Tools",
 			technologies: ["VS code", "Visual Studio 2019", "Sublime Text Editor", "VCS Git", "Postman"],
 		},
+		{
+			name: "Cyber security",
+			technologies: ['Burp Suite', 'OWASP top 10','sqlmap', 'subdomain-enum tools', 'OSINT tools', 'kali Linux'],
+		},
+
 	],
 	projects: [
 		{
 			tag: "Fullstack",
-			title: "Fullstack MERN App",
-			description: "Shows where you will be roaming next year by fetching random images from API",
-			demoLink: "https://khadkauj.github.io/FullstackApp/",
-			image: "https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/147027643_159323175999498_197650222610487487_o.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=ySWq6fZitLoAX_Yf4v_&_nc_ht=scontent-frx5-1.xx&oh=56832a884c0301fc98eb1c9c8b7bcdcc&oe=6071A1A1",
+			title: "Jacsy",
+			description: "A forum for a University- Ask/answer, shop, and stalk!",
+			demoLink: "https://festive-noether-e12858.netlify.app/",
+			image: "https://scontent-ham3-1.xx.fbcdn.net/v/t39.30808-6/311493474_550364200228725_620104567038310325_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=rAc6mOyacJ0AX84izYx&_nc_ht=scontent-ham3-1.xx&oh=00_AT8nbCsMulpge1gHvcYqAbRHvrq43RzjXntKwZLjJuyunA&oe=634D37E4",
 		},
 		{
 			tag: "Fullstack",
 			title: "Realtime-Chatbox",
 			description: "A real-time Messenger like app to chat with your friend..",
 			demoLink: "https://khadkauj.github.io/chatbox/",
-			image: "https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/147094368_159323165999499_4039701925295920226_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=730e14&_nc_ohc=go3IdyqeS84AX_Sqd-I&_nc_ht=scontent-frt3-1.xx&oh=03fa5489890af08f8d3cb88682dcd32e&oe=60744341",
+			image: "https://scontent-ham3-1.xx.fbcdn.net/v/t39.30808-6/311364127_550364190228726_2033039860565846214_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=HCsiQhEOcg4AX99kJRN&_nc_ht=scontent-ham3-1.xx&oh=00_AT_6WVB4kniNMbTKexQCXO8uGAA3ewFzdird1KwKR6-sqg&oe=634C241C",
 		},
-		{
-			tag: "Fullstack",
-			title: "LinkedIn Clone",
-			description: "LinkedIn clone that lets you login and post your ideas.",
-			demoLink: "https://khadkauj.github.io/my-news/",
-			image:
-				"https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/148424503_159323162666166_126783620619360518_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=f_eHzIIuJ5kAX8ZB3C6&_nc_ht=scontent-frt3-1.xx&oh=f24fa91f6161aa6f1da597f1286eab63&oe=60729FF5",
-		},
-
-		{
-			tag: "Frontend",
-			title: "Lovebot-Tinder-Clone",
-			description: "A Tinder-like-Clone where you can share your photo and swap people",
-			demoLink: "https://khadkauj.github.io/lovebot/",
-			image:
-				"https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/148326163_159328879332261_7091389066543487271_o.jpg?_nc_cat=108&ccb=1-3&_nc_sid=730e14&_nc_ohc=VqbwtUSFYv8AX_c_vav&_nc_ht=scontent-frt3-1.xx&oh=89f909e2826dbe17ce47b021f89e789e&oe=60756D6D",
-		},
-		{
-			tag: "Backend",
-			title: "NodeJS Server Api",
-			description: "A  hotel dish API made using NodeJS, Express, and MongoDB",
-			demoLink: "https://github.com/khadkauj/Node-MongoDB-HotelDishMenu",
-			image: "https://docs.tilt.dev/assets/docimg/example-nodejs-3-liveupdate.png",
-		},
+		
 	],
 };
 

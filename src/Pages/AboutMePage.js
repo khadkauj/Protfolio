@@ -17,7 +17,7 @@ const AboutMePage = () => {
 				<Grid container>
 					<Grid item xs={12}>
 						<p className="aboutme__text">
-							First year CS major student here at Jacobs University Bremen.<br /> <br />
+							Final year CS major student here at Jacobs University Bremen.<br /> <br />
 							Tynag Tyang Dhish!!! <br /> <br /> In der Freizeit liest Philosophien/Gedichte. Denkt an leckeres Essen.
 							<br /> <br /> A Kasturi, of both worlds.
 						</p>
