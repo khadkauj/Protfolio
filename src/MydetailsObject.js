@@ -107,14 +107,21 @@ const details = {
 			title: "Jacsy",
 			description: "A forum for a University- Ask/answer, shop, and stalk!",
 			demoLink: "https://festive-noether-e12858.netlify.app/",
-			image: "https://scontent-ham3-1.xx.fbcdn.net/v/t39.30808-6/311493474_550364200228725_620104567038310325_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=rAc6mOyacJ0AX84izYx&_nc_ht=scontent-ham3-1.xx&oh=00_AT8nbCsMulpge1gHvcYqAbRHvrq43RzjXntKwZLjJuyunA&oe=634D37E4",
+			image: "https://placeanad.orlandosentinel.com/wp-content/uploads/2020/03/Obituary.jpg",
+		},
+		{
+			tag: "Fullstack",
+			title: "GreenChain- Blockchain App for Supply Chain Management",
+			description: "Companies Transparently put transactions in Blockchain, and costumers shop store based on G-score we calculate from blockchain.",
+			demoLink: "Transparently put transactions in Blockchain.",
+			image: "https://openclipart.org/download/326930/isometric-chain.svg",
 		},
 		{
 			tag: "Fullstack",
 			title: "Realtime-Chatbox",
 			description: "A real-time Messenger like app to chat with your friend..",
 			demoLink: "https://khadkauj.github.io/chatbox/",
-			image: "https://scontent-ham3-1.xx.fbcdn.net/v/t39.30808-6/311364127_550364190228726_2033039860565846214_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=HCsiQhEOcg4AX99kJRN&_nc_ht=scontent-ham3-1.xx&oh=00_AT_6WVB4kniNMbTKexQCXO8uGAA3ewFzdird1KwKR6-sqg&oe=634C241C",
+			image: "https://st3.depositphotos.com/5532432/17164/v/600/depositphotos_171641188-stock-illustration-chat-vector-icon.jpg",
 		},
 		
 	],
