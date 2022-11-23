@@ -12,7 +12,7 @@ const AboutMePage = () => {
 		<div className="AboutMe">
 			{/* ABOUT ME */}
 			<div className="section__div">
-				<h2 className="my__services">About Me</h2>
+				<h2 className="my__services">About Me(Not updated)</h2>
 				<hr className="hr" />
 				<Grid container>
 					<Grid item xs={12}>

@@ -89,7 +89,7 @@ const details = {
 		},
 		{
 			name: "Other Progaming skills",
-			technologies: ["C/C++", "Javascript", "Typescript", "Python","OpenCV", "OOP", "Haskell","Lua/Love2D"],
+			technologies: ["C/C++", "Javascript", "Typescript", "Python","OpenCV", "Haskell","Solidity"],
 		},
 		{
 			name: "Development Tools",
